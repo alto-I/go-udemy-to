@@ -2,3 +2,399 @@
 2023/01/10 22:14:51 users.go:33: table users has no column named created_at
 2023/01/10 22:34:00 users.go:65: not enough args to execute query: want 1 got 0
 2023/01/14 13:51:35 todos.go:76: near "?": syntax error
+2023/01/14 14:46:04 server.go:3230: http: panic serving 127.0.0.1:56108: open app/views/templates/layout.html: no such file or directory
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:1850 +0xbf
+panic({0x10049f000, 0xc0001080c0})
+	/usr/local/Cellar/go/1.19.4/libexec/src/runtime/panic.go:890 +0x262
+text/template.Must(...)
+	/usr/local/Cellar/go/1.19.4/libexec/src/text/template/helper.go:26
+udemy_todo/app/controllers.generateHTML({0x10057ea88?, 0xc000118000}, {0x10047ca40, 0x10057bd10}, {0xc0000bda20?, 0x2, 0x0?})
+	/Users/alto/go/src/udemy_todo/app/controllers/server.go:15 +0x106
+udemy_todo/app/controllers.top({0x10057ea88?, 0xc000118000?}, 0x1000c2593?)
+	/Users/alto/go/src/udemy_todo/app/controllers/route_main.go:8 +0x75
+net/http.HandlerFunc.ServeHTTP(0xc0000bdaf0?, {0x10057ea88?, 0xc000118000?}, 0x0?)
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10057ea88, 0xc000118000}, 0xc000214000)
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc00020a030?}, {0x10057ea88, 0xc000118000}, 0xc000214000)
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc0000b7040, {0x10057ef20, 0xc00009b2c0})
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:3102 +0x4db
+2023/01/14 14:46:04 server.go:3230: http: panic serving 127.0.0.1:56109: open app/views/templates/layout.html: no such file or directory
+goroutine 21 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:1850 +0xbf
+panic({0x10049f000, 0xc00009b500})
+	/usr/local/Cellar/go/1.19.4/libexec/src/runtime/panic.go:890 +0x262
+text/template.Must(...)
+	/usr/local/Cellar/go/1.19.4/libexec/src/text/template/helper.go:26
+udemy_todo/app/controllers.generateHTML({0x10057ea88?, 0xc00019e000}, {0x10047ca40, 0x10057bd10}, {0xc00005ca20?, 0x2, 0x0?})
+	/Users/alto/go/src/udemy_todo/app/controllers/server.go:15 +0x106
+udemy_todo/app/controllers.top({0x10057ea88?, 0xc00019e000?}, 0x1000c2593?)
+	/Users/alto/go/src/udemy_todo/app/controllers/route_main.go:8 +0x75
+net/http.HandlerFunc.ServeHTTP(0xc00005caf0?, {0x10057ea88?, 0xc00019e000?}, 0x0?)
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10057ea88, 0xc00019e000}, 0xc000188100)
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc00009b410?}, {0x10057ea88, 0xc00019e000}, 0xc000188100)
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc0000b70e0, {0x10057ef20, 0xc00009b2c0})
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:3102 +0x4db
+2023/01/14 14:46:04 server.go:3230: http: panic serving 127.0.0.1:56110: open app/views/templates/layout.html: no such file or directory
+goroutine 6 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:1850 +0xbf
+panic({0x10049f000, 0xc00020a120})
+	/usr/local/Cellar/go/1.19.4/libexec/src/runtime/panic.go:890 +0x262
+text/template.Must(...)
+	/usr/local/Cellar/go/1.19.4/libexec/src/text/template/helper.go:26
+udemy_todo/app/controllers.generateHTML({0x10057ea88?, 0xc000228000}, {0x10047ca40, 0x10057bd10}, {0xc000204a20?, 0x2, 0x0?})
+	/Users/alto/go/src/udemy_todo/app/controllers/server.go:15 +0x106
+udemy_todo/app/controllers.top({0x10057ea88?, 0xc000228000?}, 0x1000c2593?)
+	/Users/alto/go/src/udemy_todo/app/controllers/route_main.go:8 +0x75
+net/http.HandlerFunc.ServeHTTP(0xc000204af0?, {0x10057ea88?, 0xc000228000?}, 0x0?)
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10057ea88, 0xc000228000}, 0xc000106100)
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc000108180?}, {0x10057ea88, 0xc000228000}, 0xc000106100)
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc0000000a0, {0x10057ef20, 0xc00009b2c0})
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:3102 +0x4db
+2023/01/14 14:46:05 server.go:3230: http: panic serving 127.0.0.1:56122: open app/views/templates/layout.html: no such file or directory
+goroutine 35 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:1850 +0xbf
+panic({0x10049f000, 0xc000108330})
+	/usr/local/Cellar/go/1.19.4/libexec/src/runtime/panic.go:890 +0x262
+text/template.Must(...)
+	/usr/local/Cellar/go/1.19.4/libexec/src/text/template/helper.go:26
+udemy_todo/app/controllers.generateHTML({0x10057ea88?, 0xc0001180e0}, {0x10047ca40, 0x10057bd10}, {0xc000204a20?, 0x2, 0x0?})
+	/Users/alto/go/src/udemy_todo/app/controllers/server.go:15 +0x106
+udemy_todo/app/controllers.top({0x10057ea88?, 0xc0001180e0?}, 0x1000c2593?)
+	/Users/alto/go/src/udemy_todo/app/controllers/route_main.go:8 +0x75
+net/http.HandlerFunc.ServeHTTP(0xc000204af0?, {0x10057ea88?, 0xc0001180e0?}, 0x0?)
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10057ea88, 0xc0001180e0}, 0xc000214200)
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc00020a1e0?}, {0x10057ea88, 0xc0001180e0}, 0xc000214200)
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc000258000, {0x10057ef20, 0xc00009b2c0})
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:3102 +0x4db
+2023/01/14 14:46:05 server.go:3230: http: panic serving 127.0.0.1:56123: open app/views/templates/layout.html: no such file or directory
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:1850 +0xbf
+panic({0x10049f000, 0xc00020a2a0})
+	/usr/local/Cellar/go/1.19.4/libexec/src/runtime/panic.go:890 +0x262
+text/template.Must(...)
+	/usr/local/Cellar/go/1.19.4/libexec/src/text/template/helper.go:26
+udemy_todo/app/controllers.generateHTML({0x10057ea88?, 0xc0002280e0}, {0x10047ca40, 0x10057bd10}, {0xc000061a20?, 0x2, 0x0?})
+	/Users/alto/go/src/udemy_todo/app/controllers/server.go:15 +0x106
+udemy_todo/app/controllers.top({0x10057ea88?, 0xc0002280e0?}, 0x1000c2593?)
+	/Users/alto/go/src/udemy_todo/app/controllers/route_main.go:8 +0x75
+net/http.HandlerFunc.ServeHTTP(0xc000061af0?, {0x10057ea88?, 0xc0002280e0?}, 0x0?)
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10057ea88, 0xc0002280e0}, 0xc000106200)
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc000108240?}, {0x10057ea88, 0xc0002280e0}, 0xc000106200)
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc000000140, {0x10057ef20, 0xc00009b2c0})
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:3102 +0x4db
+2023/01/14 14:46:05 server.go:3230: http: panic serving 127.0.0.1:56124: open app/views/templates/layout.html: no such file or directory
+goroutine 23 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:1850 +0xbf
+panic({0x10049f000, 0xc00020a390})
+	/usr/local/Cellar/go/1.19.4/libexec/src/runtime/panic.go:890 +0x262
+text/template.Must(...)
+	/usr/local/Cellar/go/1.19.4/libexec/src/text/template/helper.go:26
+udemy_todo/app/controllers.generateHTML({0x10057ea88?, 0xc0002281c0}, {0x10047ca40, 0x10057bd10}, {0xc00005ca20?, 0x2, 0x0?})
+	/Users/alto/go/src/udemy_todo/app/controllers/server.go:15 +0x106
+udemy_todo/app/controllers.top({0x10057ea88?, 0xc0002281c0?}, 0x1000c2593?)
+	/Users/alto/go/src/udemy_todo/app/controllers/route_main.go:8 +0x75
+net/http.HandlerFunc.ServeHTTP(0xc00005caf0?, {0x10057ea88?, 0xc0002281c0?}, 0x0?)
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10057ea88, 0xc0002281c0}, 0xc000188300)
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc00009b5c0?}, {0x10057ea88, 0xc0002281c0}, 0xc000188300)
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc0000b7180, {0x10057ef20, 0xc00009b2c0})
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:3102 +0x4db
+2023/01/14 14:46:10 server.go:3230: http: panic serving 127.0.0.1:56145: open app/views/templates/layout.html: no such file or directory
+goroutine 38 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:1850 +0xbf
+panic({0x10049f000, 0xc000108420})
+	/usr/local/Cellar/go/1.19.4/libexec/src/runtime/panic.go:890 +0x262
+text/template.Must(...)
+	/usr/local/Cellar/go/1.19.4/libexec/src/text/template/helper.go:26
+udemy_todo/app/controllers.generateHTML({0x10057ea88?, 0xc0001181c0}, {0x10047ca40, 0x10057bd10}, {0xc000061a20?, 0x2, 0x0?})
+	/Users/alto/go/src/udemy_todo/app/controllers/server.go:15 +0x106
+udemy_todo/app/controllers.top({0x10057ea88?, 0xc0001181c0?}, 0x1000c2593?)
+	/Users/alto/go/src/udemy_todo/app/controllers/route_main.go:8 +0x75
+net/http.HandlerFunc.ServeHTTP(0xc000061af0?, {0x10057ea88?, 0xc0001181c0?}, 0x0?)
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10057ea88, 0xc0001181c0}, 0xc000214600)
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc00020a570?}, {0x10057ea88, 0xc0001181c0}, 0xc000214600)
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc0002580a0, {0x10057ef20, 0xc00009b2c0})
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:3102 +0x4db
+2023/01/14 14:46:10 server.go:3230: http: panic serving 127.0.0.1:56146: open app/views/templates/layout.html: no such file or directory
+goroutine 39 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:1850 +0xbf
+panic({0x10049f000, 0xc00009b680})
+	/usr/local/Cellar/go/1.19.4/libexec/src/runtime/panic.go:890 +0x262
+text/template.Must(...)
+	/usr/local/Cellar/go/1.19.4/libexec/src/text/template/helper.go:26
+udemy_todo/app/controllers.generateHTML({0x10057ea88?, 0xc00019e0e0}, {0x10047ca40, 0x10057bd10}, {0xc00005ca20?, 0x2, 0x0?})
+	/Users/alto/go/src/udemy_todo/app/controllers/server.go:15 +0x106
+udemy_todo/app/controllers.top({0x10057ea88?, 0xc00019e0e0?}, 0x1000c2593?)
+	/Users/alto/go/src/udemy_todo/app/controllers/route_main.go:8 +0x75
+net/http.HandlerFunc.ServeHTTP(0xc00005caf0?, {0x10057ea88?, 0xc00019e0e0?}, 0x0?)
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10057ea88, 0xc00019e0e0}, 0xc000214500)
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc00020a510?}, {0x10057ea88, 0xc00019e0e0}, 0xc000214500)
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc000258140, {0x10057ef20, 0xc00009b2c0})
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:3102 +0x4db
+2023/01/14 14:46:10 server.go:3230: http: panic serving 127.0.0.1:56147: open app/views/templates/layout.html: no such file or directory
+goroutine 40 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:1850 +0xbf
+panic({0x10049f000, 0xc00009b770})
+	/usr/local/Cellar/go/1.19.4/libexec/src/runtime/panic.go:890 +0x262
+text/template.Must(...)
+	/usr/local/Cellar/go/1.19.4/libexec/src/text/template/helper.go:26
+udemy_todo/app/controllers.generateHTML({0x10057ea88?, 0xc00019e1c0}, {0x10047ca40, 0x10057bd10}, {0xc000205a20?, 0x2, 0x0?})
+	/Users/alto/go/src/udemy_todo/app/controllers/server.go:15 +0x106
+udemy_todo/app/controllers.top({0x10057ea88?, 0xc00019e1c0?}, 0x1000c2593?)
+	/Users/alto/go/src/udemy_todo/app/controllers/route_main.go:8 +0x75
+net/http.HandlerFunc.ServeHTTP(0xc000205af0?, {0x10057ea88?, 0xc00019e1c0?}, 0x0?)
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10057ea88, 0xc00019e1c0}, 0xc000214700)
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc00020a630?}, {0x10057ea88, 0xc00019e1c0}, 0xc000214700)
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc0002581e0, {0x10057ef20, 0xc00009b2c0})
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:3102 +0x4db
+2023/01/14 14:46:40 server.go:3230: http: panic serving 127.0.0.1:56270: open app/views/templates/layout.html: no such file or directory
+goroutine 50 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:1850 +0xbf
+panic({0x10049f000, 0xc00009b830})
+	/usr/local/Cellar/go/1.19.4/libexec/src/runtime/panic.go:890 +0x262
+text/template.Must(...)
+	/usr/local/Cellar/go/1.19.4/libexec/src/text/template/helper.go:26
+udemy_todo/app/controllers.generateHTML({0x10057ea88?, 0xc00019e2a0}, {0x10047ca40, 0x10057bd10}, {0xc000200a20?, 0x2, 0x0?})
+	/Users/alto/go/src/udemy_todo/app/controllers/server.go:15 +0x106
+udemy_todo/app/controllers.top({0x10057ea88?, 0xc00019e2a0?}, 0x1000c2593?)
+	/Users/alto/go/src/udemy_todo/app/controllers/route_main.go:8 +0x75
+net/http.HandlerFunc.ServeHTTP(0xc000200af0?, {0x10057ea88?, 0xc00019e2a0?}, 0x0?)
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10057ea88, 0xc00019e2a0}, 0xc0002a6000)
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc000298090?}, {0x10057ea88, 0xc00019e2a0}, 0xc0002a6000)
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc00029c000, {0x10057ef20, 0xc00009b2c0})
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:3102 +0x4db
+2023/01/14 14:46:40 server.go:3230: http: panic serving 127.0.0.1:56271: open app/views/templates/layout.html: no such file or directory
+goroutine 51 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:1850 +0xbf
+panic({0x10049f000, 0xc000298240})
+	/usr/local/Cellar/go/1.19.4/libexec/src/runtime/panic.go:890 +0x262
+text/template.Must(...)
+	/usr/local/Cellar/go/1.19.4/libexec/src/text/template/helper.go:26
+udemy_todo/app/controllers.generateHTML({0x10057ea88?, 0xc0002ba000}, {0x10047ca40, 0x10057bd10}, {0xc000201a20?, 0x2, 0x0?})
+	/Users/alto/go/src/udemy_todo/app/controllers/server.go:15 +0x106
+udemy_todo/app/controllers.top({0x10057ea88?, 0xc0002ba000?}, 0x1000c2593?)
+	/Users/alto/go/src/udemy_todo/app/controllers/route_main.go:8 +0x75
+net/http.HandlerFunc.ServeHTTP(0xc000201af0?, {0x10057ea88?, 0xc0002ba000?}, 0x0?)
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10057ea88, 0xc0002ba000}, 0xc0002a6100)
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc000298150?}, {0x10057ea88, 0xc0002ba000}, 0xc0002a6100)
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc00029c0a0, {0x10057ef20, 0xc00009b2c0})
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:3102 +0x4db
+2023/01/14 14:46:40 server.go:3230: http: panic serving 127.0.0.1:56272: open app/views/templates/layout.html: no such file or directory
+goroutine 10 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:1850 +0xbf
+panic({0x10049f000, 0xc000108600})
+	/usr/local/Cellar/go/1.19.4/libexec/src/runtime/panic.go:890 +0x262
+text/template.Must(...)
+	/usr/local/Cellar/go/1.19.4/libexec/src/text/template/helper.go:26
+udemy_todo/app/controllers.generateHTML({0x10057ea88?, 0xc0001182a0}, {0x10047ca40, 0x10057bd10}, {0xc000061a20?, 0x2, 0x0?})
+	/Users/alto/go/src/udemy_todo/app/controllers/server.go:15 +0x106
+udemy_todo/app/controllers.top({0x10057ea88?, 0xc0001182a0?}, 0x1000c2593?)
+	/Users/alto/go/src/udemy_todo/app/controllers/route_main.go:8 +0x75
+net/http.HandlerFunc.ServeHTTP(0xc000061af0?, {0x10057ea88?, 0xc0001182a0?}, 0x0?)
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10057ea88, 0xc0001182a0}, 0xc000106500)
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc000108540?}, {0x10057ea88, 0xc0001182a0}, 0xc000106500)
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc0000001e0, {0x10057ef20, 0xc00009b2c0})
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:3102 +0x4db
+2023/01/14 14:47:27 server.go:3230: http: panic serving 127.0.0.1:56464: template: layout.html:19: unexpected EOF
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:1850 +0xbf
+panic({0x10048ca60, 0xc0000b00d0})
+	/usr/local/Cellar/go/1.19.4/libexec/src/runtime/panic.go:890 +0x262
+text/template.Must(...)
+	/usr/local/Cellar/go/1.19.4/libexec/src/text/template/helper.go:26
+udemy_todo/app/controllers.generateHTML({0x10057ea88?, 0xc0000b4000}, {0x10047ca40, 0x10057bd10}, {0xc00011da20?, 0x2, 0x0?})
+	/Users/alto/go/src/udemy_todo/app/controllers/server.go:15 +0x106
+udemy_todo/app/controllers.top({0x10057ea88?, 0xc0000b4000?}, 0x1000c2593?)
+	/Users/alto/go/src/udemy_todo/app/controllers/route_main.go:8 +0x75
+net/http.HandlerFunc.ServeHTTP(0xc00011daf0?, {0x10057ea88?, 0xc0000b4000?}, 0x0?)
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10057ea88, 0xc0000b4000}, 0xc00015a200)
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc00010d4a0?}, {0x10057ea88, 0xc0000b4000}, 0xc00015a200)
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc000000fa0, {0x10057ef20, 0xc00010d2c0})
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:3102 +0x4db
+2023/01/14 14:47:27 server.go:3230: http: panic serving 127.0.0.1:56465: template: layout.html:19: unexpected EOF
+goroutine 8 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:1850 +0xbf
+panic({0x10048ca60, 0xc0001980d0})
+	/usr/local/Cellar/go/1.19.4/libexec/src/runtime/panic.go:890 +0x262
+text/template.Must(...)
+	/usr/local/Cellar/go/1.19.4/libexec/src/text/template/helper.go:26
+udemy_todo/app/controllers.generateHTML({0x10057ea88?, 0xc00019c000}, {0x10047ca40, 0x10057bd10}, {0xc000061a20?, 0x2, 0x0?})
+	/Users/alto/go/src/udemy_todo/app/controllers/server.go:15 +0x106
+udemy_todo/app/controllers.top({0x10057ea88?, 0xc00019c000?}, 0x1000c2593?)
+	/Users/alto/go/src/udemy_todo/app/controllers/route_main.go:8 +0x75
+net/http.HandlerFunc.ServeHTTP(0xc000061af0?, {0x10057ea88?, 0xc00019c000?}, 0x0?)
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10057ea88, 0xc00019c000}, 0xc00015a100)
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc00010d410?}, {0x10057ea88, 0xc00019c000}, 0xc00015a100)
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc000001040, {0x10057ef20, 0xc00010d2c0})
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:3102 +0x4db
+2023/01/14 14:47:27 server.go:3230: http: panic serving 127.0.0.1:56466: template: layout.html:19: unexpected EOF
+goroutine 9 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:1850 +0xbf
+panic({0x10048ca60, 0xc000017190})
+	/usr/local/Cellar/go/1.19.4/libexec/src/runtime/panic.go:890 +0x262
+text/template.Must(...)
+	/usr/local/Cellar/go/1.19.4/libexec/src/text/template/helper.go:26
+udemy_todo/app/controllers.generateHTML({0x10057ea88?, 0xc000172000}, {0x10047ca40, 0x10057bd10}, {0xc000063a20?, 0x2, 0x0?})
+	/Users/alto/go/src/udemy_todo/app/controllers/server.go:15 +0x106
+udemy_todo/app/controllers.top({0x10057ea88?, 0xc000172000?}, 0x1000c2593?)
+	/Users/alto/go/src/udemy_todo/app/controllers/route_main.go:8 +0x75
+net/http.HandlerFunc.ServeHTTP(0xc000063af0?, {0x10057ea88?, 0xc000172000?}, 0x0?)
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10057ea88, 0xc000172000}, 0xc00015a300)
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc00010d590?}, {0x10057ea88, 0xc000172000}, 0xc00015a300)
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc0000010e0, {0x10057ef20, 0xc00010d2c0})
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:3102 +0x4db
+2023/01/14 14:47:31 server.go:3230: http: panic serving 127.0.0.1:56487: template: layout.html:19: unexpected EOF
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:1850 +0xbf
+panic({0x10048ca60, 0xc0000b01d0})
+	/usr/local/Cellar/go/1.19.4/libexec/src/runtime/panic.go:890 +0x262
+text/template.Must(...)
+	/usr/local/Cellar/go/1.19.4/libexec/src/text/template/helper.go:26
+udemy_todo/app/controllers.generateHTML({0x10057ea88?, 0xc0000b40e0}, {0x10047ca40, 0x10057bd10}, {0xc000062a20?, 0x2, 0x0?})
+	/Users/alto/go/src/udemy_todo/app/controllers/server.go:15 +0x106
+udemy_todo/app/controllers.top({0x10057ea88?, 0xc0000b40e0?}, 0x1000c2593?)
+	/Users/alto/go/src/udemy_todo/app/controllers/route_main.go:8 +0x75
+net/http.HandlerFunc.ServeHTTP(0xc000062af0?, {0x10057ea88?, 0xc0000b40e0?}, 0x0?)
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10057ea88, 0xc0000b40e0}, 0xc000096100)
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc000098330?}, {0x10057ea88, 0xc0000b40e0}, 0xc000096100)
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc0000e4000, {0x10057ef20, 0xc00010d2c0})
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:3102 +0x4db
+2023/01/14 14:47:31 server.go:3230: http: panic serving 127.0.0.1:56488: template: layout.html:19: unexpected EOF
+goroutine 12 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:1850 +0xbf
+panic({0x10048ca60, 0xc0000b02c0})
+	/usr/local/Cellar/go/1.19.4/libexec/src/runtime/panic.go:890 +0x262
+text/template.Must(...)
+	/usr/local/Cellar/go/1.19.4/libexec/src/text/template/helper.go:26
+udemy_todo/app/controllers.generateHTML({0x10057ea88?, 0xc0000b41c0}, {0x10047ca40, 0x10057bd10}, {0xc000063a20?, 0x2, 0x0?})
+	/Users/alto/go/src/udemy_todo/app/controllers/server.go:15 +0x106
+udemy_todo/app/controllers.top({0x10057ea88?, 0xc0000b41c0?}, 0x1000c2593?)
+	/Users/alto/go/src/udemy_todo/app/controllers/route_main.go:8 +0x75
+net/http.HandlerFunc.ServeHTTP(0xc000063af0?, {0x10057ea88?, 0xc0000b41c0?}, 0x0?)
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10057ea88, 0xc0000b41c0}, 0xc00015a500)
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc00010d8f0?}, {0x10057ea88, 0xc0000b41c0}, 0xc00015a500)
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc000001180, {0x10057ef20, 0xc00010d2c0})
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:3102 +0x4db
+2023/01/14 14:47:31 server.go:3230: http: panic serving 127.0.0.1:56489: template: layout.html:19: unexpected EOF
+goroutine 25 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:1850 +0xbf
+panic({0x10048ca60, 0xc0000b03c0})
+	/usr/local/Cellar/go/1.19.4/libexec/src/runtime/panic.go:890 +0x262
+text/template.Must(...)
+	/usr/local/Cellar/go/1.19.4/libexec/src/text/template/helper.go:26
+udemy_todo/app/controllers.generateHTML({0x10057ea88?, 0xc0000b42a0}, {0x10047ca40, 0x10057bd10}, {0xc000063a20?, 0x2, 0x0?})
+	/Users/alto/go/src/udemy_todo/app/controllers/server.go:15 +0x106
+udemy_todo/app/controllers.top({0x10057ea88?, 0xc0000b42a0?}, 0x1000c2593?)
+	/Users/alto/go/src/udemy_todo/app/controllers/route_main.go:8 +0x75
+net/http.HandlerFunc.ServeHTTP(0xc000063af0?, {0x10057ea88?, 0xc0000b42a0?}, 0x0?)
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10057ea88, 0xc0000b42a0}, 0xc000096400)
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc000098900?}, {0x10057ea88, 0xc0000b42a0}, 0xc000096400)
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc0000e40a0, {0x10057ef20, 0xc00010d2c0})
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.19.4/libexec/src/net/http/server.go:3102 +0x4db
